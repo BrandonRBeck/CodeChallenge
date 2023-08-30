@@ -4,5 +4,5 @@ namespace CodeChallenge.Services;
 
 public interface ICodeChallengeService
 {
-    Task<ChallengeResponseObject> GetTheResponse(string userInput);
+    Task<ChallengeResponseObject> ReverseString(string userInput);
 }

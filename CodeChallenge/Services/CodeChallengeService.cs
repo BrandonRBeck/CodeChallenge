@@ -4,7 +4,7 @@ namespace CodeChallenge.Services;
 
 public class CodeChallengeService : ICodeChallengeService
 {
-    public async Task<ChallengeResponseObject> GetTheResponse(string userInput)
+    public async Task<ChallengeResponseObject> ReverseString(string userInput)
     {
         await Task.CompletedTask;
         var inputAsArray = userInput.ToCharArray();

@@ -19,9 +19,10 @@ public class CodeChallengeController : Controller
 
     [HttpGet]
     [Route("ReverseString")]
-    public async Task<ActionResult<ChallengeResponseObject>> InitiateChallenge([FromQuery] string userInput) 
+    public async Task<ActionResult<ChallengeResponseObject>> ReverseString([FromQuery] string userInput)
     {
-        var response = await _codeChallengeService.GetTheResponse(userInput);
+        var response = await _codeChallengeService.ReverseString(userInput);
         return Ok(response);
     }
+
 }
