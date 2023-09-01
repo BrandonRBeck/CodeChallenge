@@ -7,5 +7,5 @@ public class SchedulingContext : DbContext
 {
     public SchedulingContext(DbContextOptions<SchedulingContext> options) : base(options) { }
     public DbSet<Appointment> Appointments { get; set; }
-    public DbSet<Appointment> Users { get; set; }
+    public DbSet<User> Users { get; set; }
 }
